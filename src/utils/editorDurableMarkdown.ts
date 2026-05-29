@@ -11,11 +11,13 @@ import {
   preProcessFileAttachmentMarkdown,
   serializeFileAttachmentBlocks,
 } from './fileAttachmentMarkdown'
+import { excalidrawMarkdownCodec } from './excalidrawMarkdown'
 import { serializeMathAwareBlocks } from './mathMarkdown'
 import { mermaidMarkdownCodec } from './mermaidMarkdown'
 import { tldrawMarkdownCodec } from './tldrawMarkdown'
 
 const EDITOR_DURABLE_MARKDOWN_CODECS = [
+  excalidrawMarkdownCodec,
   mermaidMarkdownCodec,
   tldrawMarkdownCodec,
 ] as const
